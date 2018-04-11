@@ -17,9 +17,50 @@ form {
     margin: 0 auto;
     width: 400px;
     padding: 1em;
-    border: 1px solid #CCC;
+    border: 1px solid black;
     border-radius: 1em;
-    
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    background-color: rgb(157, 233, 233)
+}
+
+.section {
+    /* width: 250px; */
+    width: 100%;
+    box-sizing: border-box;
+    /* margin-left: 136px; */
+    /* border: 1px solid rgb(241, 3, 3); */
+    display:flex;
+    flex-direction:column;
+    position: relative;
+    flex
+}
+
+.topic {
+    /* width: 250px; */
+    width: 100%;
+    box-sizing: border-box;
+    /* margin-left: 136px; */
+    border: 1px solid black;
+    display:flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+
+}
+
+.content {
+    /* width: 250px; */
+    width: 100%;
+    box-sizing: border-box;
+    /* margin-left: 136px; */
+    border: 1px solid #999;
+    align-content: right;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+
 }
 
 div+div {
@@ -57,7 +98,7 @@ textarea {
 fieldset {
     width: 250px;
     box-sizing: border-box;
-    margin-left: 136px;
+    /* margin-left: 136px; */
     border: 1px solid #999;
 }
 

@@ -22,205 +22,205 @@
 </head>
 
 <body>
-<div id=main>
-    <form>
-        <h1>Enrollment/Payment Form</h1>
-        <p>Required fields are followed by
-            <strong>
-                <abbr title="required">*</abbr>
-            </strong>.</p>
-        <section>
-            
-            <fieldset id=contact>
-                <autofocus>
-                <h2>Contact information</h2>
-                <fieldset id="namecontent">
-                    <label for="Title">
-                        <span>Title: </span>
-                        <strong>
-                    </label>
+    <div id=main>
+        <form>
+            <h1>Enrollment/Payment Form</h1>
+            <p>Required fields are followed by
+                <strong>
+                    <abbr title="required">*</abbr>
+                </strong>.</p>
+            <section id="sect1" class="section">
 
-                    <label for="title_1">
-                        <input type="radio" id="title_1" name="title" value="Mr."> Mr
-                    </label>
+                <fieldset id=contact class="topic">
+                    <autofocus>
+                        <h2>Contact information</h2>
+                        <fieldset id="namecontent">
+                            <label for="Title">
+                                <span>Title: </span>
+                                <strong>
+                            </label>
 
-                    <label for="title_2">
-                        <input type="radio" id="title_2" name="title" value="Ms."> Ms
-                    </label>
+                            <label for="title_1">
+                                <input type="radio" id="title_1" name="title" value="Mr."> Mr
+                            </label>
 
-                    <p>
-                        <label for="name">
-                            <span>Name: </span>
-                            <strong>
-                                <abbr title="required">*</abbr>
-                            </strong>
-                        </label>
-                        <input type="text" id="name" name="username">
-                    </p>
+                            <label for="title_2">
+                                <input type="radio" id="title_2" name="title" value="Ms."> Ms
+                            </label>
 
-                    <p>
-                        <label for="CellNumber">
-                            <span>Cell Phone: </span>
-                            <strong>
-                        </label>
-                        <input type="tel" id="tel" name="usertel">
-                    </p>
+                            <p>
+                                <label for="name" class="content">
+                                    <span>Name: </span>
+                                    <strong>
+                                        <abbr title="required">*</abbr>
+                                    </strong>
+                                </label>
+                                <input type="text" id="name" name="username">
+                            </p>
 
-                    <p>
-                        <label for="mail">
-                            <span>E-mail: </span>
-                            <strong>
-                                <abbr title="required">*</abbr>
-                            </strong>
-                        </label>
-                        <input type="email" id="mail" name="usermail">
-                    </p>
+                            <p>
+                                <label for="CellNumber">
+                                    <span>Cell Phone: </span>
+                                    <strong>
+                                </label>
+                                <input type="tel" id="tel" name="usertel">
+                            </p>
 
-                    <p>
-                        <label for="pwd">
-                            <span>Password: </span>
-                            <strong>
-                                <abbr title="required">*</abbr>
-                            </strong>
-                        </label>
-                        <input type="password" id="pwd" name="password" maxlenght=20 minlength=8>
-                    </p>
+                            <p>
+                                <label for="mail">
+                                    <span>E-mail: </span>
+                                    <strong>
+                                        <abbr title="required">*</abbr>
+                                    </strong>
+                                </label>
+                                <input type="email" id="mail" name="usermail">
+                            </p>
 
-                    <p>
-                        <label for="pwd">
-                            <span>Homepage (url): </span>
-                            <strong>
-                        </label>
-                        <input type="url" id="url" name="homepage">
-                    </p>
+                            <p>
+                                <label for="pwd">
+                                    <span>Password: </span>
+                                    <strong>
+                                        <abbr title="required">*</abbr>
+                                    </strong>
+                                </label>
+                                <input type="password" id="pwd" name="password" maxlenght=20 minlength=8>
+                            </p>
+
+                            <p>
+                                <label for="pwd">
+                                    <span>Homepage (url): </span>
+                                    <strong>
+                                </label>
+                                <input type="url" id="url" name="homepage">
+                            </p>
+                        </fieldset>
+
+                        <p></p>
+                        <fieldset id="namepreferences" class="content">
+
+                            <legend>Communication preferences:</legend>
+                            <ul>
+
+                                <label for="contactmethod_1">
+                                    <input type="radio" id="contactmethod_1" name="contactmethod_1" value="Phone"> Phone
+                                </label>
+
+                                <label for="contactmethod_2">
+                                    <input type="radio" id="contactmethod_2" name="contactmethod_2" value="E-mail"> E-mail
+                                </label>
+
+                                <label for="contactmethod_3">
+                                    <input type="radio" id="contactmethod_3" name="contactmethod_3" value="Do not contact"> Please do not contact me.
+                                </label>
+
+                            </ul>
+                        </fieldset>
+                    </autofocus>
                 </fieldset>
 
+                <p>
+                    <fieldset id=devices class="topic">
+                        <h2>Your devices:</h2>
+                        <fieldset id="devicecontent" class="content">
+                            <legend>Check all that apply:</legend>
+                            <ul>
+                                <li>
+                                    <input type="checkbox" checked id="iOS" name="iOS" value="iOS">
+                                    <label for="iOS">iOS (iPhone/iPad)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="android" name="android" value="android">
+                                    <label for="android">android</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="mac" name="mac" value="mac">
+                                    <label for="mac">mac</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="windows" name="windows" value="windows">
+                                    <label for="windows">windows</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="chrome" name="chrome" value="chrome">
+                                    <label for="chrome">Chrome OS (Chromebook)</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="linux" name="linux" value="linux">
+                                    <label for="linux">Linux</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="other" name="other" value="other">
+                                    <label for="other">other</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                </p>
+            </section>
+
+            <section id="sect2" class="section">
                 <p></p>
-                <fieldset id="namepreferences">
+                <fieldset id="payment" class="topic">
+                    <h2>Payment information</h2>
+                    <fieldset id="pmtcontent" class="content">
+                        <p>
+                            <label for="card">
+                                <span>Card type:</span>
+                                <strong>
+                                    <abbr title="required">*</abbr>
+                                </strong>
+                            </label>
+                            <select id="card" name="usercard">
+                                <option value="visa">Visa</option>
+                                <option value="mc">Mastercard</option>
+                                <option value="amex">American Express</option>
+                            </select>
+                        </p>
 
-                    <legend>Communication preferences:</legend>
-                    <ul>
-
-                        <label for="contactmethod_1">
-                            <input type="radio" id="contactmethod_1" name="contactmethod_1" value="Phone"> Phone
-                        </label>
-
-                        <label for="contactmethod_2">
-                            <input type="radio" id="contactmethod_2" name="contactmethod_2" value="E-mail"> E-mail
-                        </label>
-
-                        <label for="contactmethod_3">
-                            <input type="radio" id="contactmethod_3" name="contactmethod_3" value="Do not contact"> Please do not contact me.
-                        </label>
-
-                    </ul>
-                </fieldset>
-            </autofocus>
+                        <p>
+                            <label for="number">
+                                <span>Card number:</span>
+                                <strong>
+                                    <abbr title="required">*</abbr>
+                                </strong>
+                            </label>
+                            <input type="text" id="number" name="cardnumber">
+                        </p>
+                        <p>
+                            <label for="date">
+                                <span>Expiration date:</span>
+                                <strong>
+                                    <abbr title="required">*</abbr>
+                                </strong>
+                                <em>formatted as mm/yy</em>
+                            </label>
+                            <input type="text" id="date" name="expiration">
+                        </p>
+                        <p>
+                            <button type="submit">Validate the payment</button>
+                        </p>
+            </section>
             </fieldset>
-
-            <p>
-                <fieldset id=devices>
-                    <h2>Your devices:</h2>
-                    <fieldset id="devicecontent">
-                        <legend>Check all that apply:</legend>
-                        <ul>
-                            <li>
-                                <input type="checkbox" checked id="iOS" name="iOS" value="iOS">
-                                <label for="iOS">iOS (iPhone/iPad)</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="android" name="android" value="android">
-                                <label for="android">android</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="mac" name="mac" value="mac">
-                                <label for="mac">mac</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="windows" name="windows" value="windows">
-                                <label for="windows">windows</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="chrome" name="chrome" value="chrome">
-                                <label for="chrome">Chrome OS (Chromebook)</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="linux" name="linux" value="linux">
-                                <label for="linux">Linux</label>
-                            </li>
-                            <li>
-                                <input type="checkbox" id="other" name="other" value="other">
-                                <label for="other">other</label>
-                            </li>
-                        </ul>
+            </fieldset>
+            <section>
+                <p></p>
+                <fieldset id="inquiry" class="topic">
+                    <h2>Your inquiry:</h2>
+                    <fieldset id="msgcontent" class="content">
+                        <p>
+                            <label for="message">
+                                <span>Inquiry type:</span>
+                            </label>
+                            <select id="message_type" name="message_type">
+                                <option value="feedback">Providing feedback</option>
+                                <option value="reporting a bug">Reporting a bug</option>
+                                <option value="custom request">Custom request</option>
+                            </select>
+                        </p>
+                        <textarea cols="60" rows="5"></textarea>
                     </fieldset>
-            </p>
-        </section>
-
-        <section>
-            <p></p>
-            <fieldset id="payment">
-                <h2>Payment information</h2>
-                <fieldset id="pmtcontent">
-                    <p>
-                        <label for="card">
-                            <span>Card type:</span>
-                            <strong>
-                                <abbr title="required">*</abbr>
-                            </strong>
-                        </label>
-                        <select id="card" name="usercard">
-                            <option value="visa">Visa</option>
-                            <option value="mc">Mastercard</option>
-                            <option value="amex">American Express</option>
-                        </select>
-                    </p>
-
-                    <p>
-                        <label for="number">
-                            <span>Card number:</span>
-                            <strong>
-                                <abbr title="required">*</abbr>
-                            </strong>
-                        </label>
-                        <input type="text" id="number" name="cardnumber">
-                    </p>
-                    <p>
-                        <label for="date">
-                            <span>Expiration date:</span>
-                            <strong>
-                                <abbr title="required">*</abbr>
-                            </strong>
-                            <em>formatted as mm/yy</em>
-                        </label>
-                        <input type="text" id="date" name="expiration">
-                    </p>
-                    <p>
-                        <button type="submit">Validate the payment</button>
-                    </p>
-        </section>
-        </fieldset>
-        </fieldset>
-        <section>
-            <p></p>
-            <fieldset id="inquiry">
-                <h2>Your inquiry:</h2>
-                <fieldset id="msgcontent">
-                    <p>
-                        <label for="message">
-                            <span>Inquiry type:</span>
-                        </label>
-                        <select id="message_type" name="message_type">
-                            <option value="feedback">Providing feedback</option>
-                            <option value="reporting a bug">Reporting a bug</option>
-                            <option value="custom request">Custom request</option>
-                        </select>
-                    </p>
-                    <textarea cols="60" rows="5"></textarea>
                 </fieldset>
-            </fieldset>
-    </form>
-</div>
+        </form>
+    </div>
 </body>
 
 </html>
