@@ -32,7 +32,7 @@
             <section id="sect1" class="section">
 
                 <fieldset id=contact class="topic">
-                    <autofocus>
+                    
                         <h2>Contact information</h2>
                         <fieldset id="namecontent">
                             <label for="Title">
@@ -55,7 +55,9 @@
                                         <abbr title="required">*</abbr>
                                     </strong>
                                 </label>
+                                <autofocus>
                                 <input type="text" id="name" name="username">
+                                </autofocus>
                             </p>
 
                             <p>
@@ -115,7 +117,7 @@
 
                             </ul>
                         </fieldset>
-                    </autofocus>
+                    
                 </fieldset>
 
                 <p>
@@ -211,15 +213,57 @@
                                 <span>Inquiry type:</span>
                             </label>
                             <select id="message_type" name="message_type">
-                                <option value="feedback">Providing feedback</option>
-                                <option value="reporting a bug">Reporting a bug</option>
-                                <option value="custom request">Custom request</option>
-                            </select>
+                                    <option value="feedback">Providing feedback</option>
+                                    <option value="reporting a bug">Reporting a bug</option>
+                                    <option value="custom request">Custom request</option>
+                                </select>
+
+
+                            </datalist>
+                            
                         </p>
                         <textarea cols="60" rows="5"></textarea>
+                        <label for="message">
+                                <span>Response urgency:</span>
+                            </label>
+                        <input type="range" list="tickmarks">
+
+                        <datalist id="tickmarks">
+                        <option value="0" label="not">
+                        <option value="10">
+                        <option value="20">
+                        <option value="30">
+                        <option value="40">
+                        <option value="50">
+                        <option value="60">
+                        <option value="70">
+                        <option value="80">
+                        <option value="90">
+                        <option value="100" label="very">
+
                     </fieldset>
                 </fieldset>
+                <br>
+
+                <button type="reset" class="reset">Reset</button>
+                <div><br></div>
+                <div>Do you like cats or dogs?<br></div>
+                <select id="mySelect">
+                    
+                        <option>Cats</option>
+                        <option>Dogs</option>
+                      </select>
+                    
         </form>
+        <p>Click the button to disable the dropdown list.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+    document.getElementById("mySelect").disabled = true;
+}
+</script>
     </div>
 </body>
 

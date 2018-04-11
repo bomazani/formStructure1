@@ -115,3 +115,18 @@ label em {
   right: 5px;
   top: 20px;
 }
+
+.slider{
+    width: 200px;
+}
+
+.urgencylabel{
+    width: 100%;
+}
+
+.reset{
+    position: relative;
+    flex-direction: row;
+    align-content: center;
+    right-padding: 20px;
+}
