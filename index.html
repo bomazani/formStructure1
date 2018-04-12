@@ -55,9 +55,9 @@
                                         <abbr title="required">*</abbr>
                                     </strong>
                                 </label>
-                                <autofocus>
-                                <input type="text" id="name" name="username">
-                                </autofocus>
+                               
+                                <input type="text" id="name" name="username" autofocus>
+                              
                             </p>
 
                             <p>
@@ -100,24 +100,24 @@
                         <p></p>
                         <fieldset id="namepreferences" class="content">
 
-                            <legend>Communication preferences:</legend>
-                            <ul>
+                        <legend>Communication preference:</legend>
+                            <label for="comunication_preference">
+                                
+                            </label>
 
                                 <label for="contactmethod_1">
-                                    <input type="radio" id="contactmethod_1" name="contactmethod_1" value="Phone"> Phone
+                                    <input type="radio" id="contactmethod_1" name="contactmethod" value="Phone"> Phone
                                 </label>
 
                                 <label for="contactmethod_2">
-                                    <input type="radio" id="contactmethod_2" name="contactmethod_2" value="E-mail"> E-mail
+                                    <input type="radio" id="contactmethod_2" name="contactmethod" value="E-mail"> E-mail
                                 </label>
 
                                 <label for="contactmethod_3">
-                                    <input type="radio" id="contactmethod_3" name="contactmethod_3" value="Do not contact"> Please do not contact me.
+                                    <input type="radio" id="contactmethod_3" name="contactmethod" value="Do not contact"> Please do not contact me.
                                 </label>
-
-                            </ul>
                         </fieldset>
-                    
+                    </label>                   
                 </fieldset>
 
                 <p>
@@ -178,28 +178,29 @@
                             </select>
                         </p>
 
-                        <p>
+                        <p id="credit_card">
                             <label for="number">
-                                <span>Card number:</span>
+                                <span id="card_entry">Card number:</span>
                                 <strong>
                                     <abbr title="required">*</abbr>
                                 </strong>
                             </label>
                             <input type="text" id="number" name="cardnumber">
                         </p>
-                        <p>
+                        <p id="credit_card">
                             <label for="date">
-                                <span>Expiration date:</span>
+                                <span id="card_entry">Expiration date:</span>
                                 <strong>
                                     <abbr title="required">*</abbr>
                                 </strong>
-                                <em>formatted as mm/yy</em>
+                                
                             </label>
                             <input type="text" id="date" name="expiration">
                         </p>
-                        <p>
+                        <label id="dateformat"><i>formatted as mm/yy</i></label>
+                        
                             <button type="submit">Validate the payment</button>
-                        </p>
+                        
             </section>
             </fieldset>
             </fieldset>
@@ -222,14 +223,15 @@
                             </datalist>
                             
                         </p>
-                        <textarea cols="60" rows="5"></textarea>
-                        <label for="message">
-                                <span>Response urgency:</span>
-                            </label>
+                        
+                        <!-- <textarea cols="60" rows="5"></textarea> -->
+                        <!-- <label for="message"> -->
+                                <span id=responseurgency>Response urgency:</span>
+                            <!-- </label> -->
                         <input type="range" list="tickmarks">
 
                         <datalist id="tickmarks">
-                        <option value="0" label="not">
+                        <option value="0" label="0%"> 
                         <option value="10">
                         <option value="20">
                         <option value="30">
@@ -239,8 +241,9 @@
                         <option value="70">
                         <option value="80">
                         <option value="90">
-                        <option value="100" label="very">
-
+                        <option value="100" label="100%">
+                        </datalist>
+                        <p id="sliderlabel">not..................................................very</p>
                     </fieldset>
                 </fieldset>
                 <br>
